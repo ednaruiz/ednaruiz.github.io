@@ -9,6 +9,11 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
+
+<style>
+  .mySlides {display:none;}
+</style>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
@@ -54,6 +59,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </header>
 
   <!-- First Photo Grid-->
+
   <div class="w3-row-padding" >
     I am a postdoc at MPIK, Heidelberg in the Non-thermal Astrophysics group.
     I research about Gamma-ray Bursts (GRBs) at VHE (E>100 GeV) mainly with the H.E.S.S. telescopes and the
@@ -103,10 +109,40 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
     <hr>
     <!-- First Photo Grid-->
-    <div class="w3-row-padding">
 
+    <div class="w3-row-padding w3-display-container">
+
+      <div class="mySlides">
+
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="./img/lapp.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Postdoc at L.A.P.P. Annecy</b></p>
+            <p>I am thrilled and excited to announce that starting November 2023 I accepted a 2-years long postdoc to work at LAPP (CNRS) on transients with the LST </p>
+          </div>
+        </div>
+
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="./img/elena.jpg" alt="Baby Elena is here" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Taking a 6 months maternity leave</b></p>
+            <p>I am taking maternity leave from april to october of 2023 to prepare and welcome little Elena to our the world.</p>
+          </div>
+        </div>
+
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="./img/hessgrb.png" alt="HESS logo" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>The HESS GRB web announcer is up</b></p>
+            <p>We have worked very hard to implement a system that allows us to announce in real time about the follow up of Swift/Fermi GRBs with HESS. Check it out here! </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mySlides">
       <div class="w3-third w3-container w3-margin-bottom">
-        <img src="./img/blois.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <img src="./img/blois.jpeg" alt="Blois" style="width:100%" class="w3-hover-opacity">
         <div class="w3-container w3-white">
           <p><b>Invited talk at Rencontres de Blois</b></p>
           <p>I was invited to give a talk at Rencontres de Blois 2021 on Recent TeV GRB Measurements.
@@ -124,6 +160,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <i> Photo by Jim Hinton </i>
         </div>
       </div>
+      
 
       <div class="w3-third w3-container">
         <img src="./img/lc.jpeg" alt="GRB190829A" style="width:100%" class="w3-hover-opacity">
@@ -133,10 +170,34 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           I worked on the analysis of the H.E.S.S. data and contributed to the discussion and paper writing. </p>
         </div>
       </div>
+      </div>
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+    </script>
 
 
-  </div>
+
+  
   
   <div class="w3-row-padding w3-padding-large" style="marging-bottom:32px" id="more">
     <h4><b>More</b><h4>
@@ -161,7 +222,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <hr class="w3-opacity">
 
   </div>
-
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-dark-grey">
   <div class="w3-row-padding">
@@ -181,10 +241,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </footer>
 
   <div class="w3-black w3-center w3-padding-24">
-    Last edited February 2022
+    Last edited October 2023
 
     <br><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
   </div>
+</div>
 
 <!-- End page content -->
 </div>
@@ -201,6 +262,7 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 </script>
+
 
 </body>
 </html>
