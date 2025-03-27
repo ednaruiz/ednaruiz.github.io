@@ -1,0 +1,62 @@
+<!-- Tailwind Config -->
+<script>
+  window.tailwind = {
+    config: {
+      darkMode: 'class'
+    }
+  };
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome 4.7 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Subpage Layout -->
+<div class="min-h-screen bg-white text-black transition-colors duration-300 px-4 pt-20 pb-10 flex flex-col items-center relative">
+  <!-- Top Bar -->
+  <div class="absolute top-0 left-0 right-0 flex justify-between items-center py-4 px-4 max-w-6xl mx-auto w-full">
+    <!-- Profile Picture -->
+    <div class="w-12 h-12 rounded-full border-2 border-black overflow-hidden">
+      <img src="/assets/img/profile-placeholder.jpg" alt="Profile Picture" class="w-full h-full object-cover rounded-full">
+    </div>
+    <!-- Navigation Links -->
+    <div class="flex items-center gap-4 text-sm font-semibold">
+      <a href="/" class="hover:underline"><i class="fa fa-angle-left"></i> Home</a>
+      <a href="/blog.html" class="hover:underline"><i class="fa fa-angle-left"></i> Blog</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="max-w-2xl w-full mt-28">
+    <h1 class="text-3xl font-bold mb-6 text-center">About Me</h1>
+
+    <p class="mb-4">I am a postdoc at the <strong>Gamma-ray group of LAPP/CNRS</strong> in Annecy, France. My main interest is the observation of <strong>Gamma-ray Bursts (GRBs)</strong> at very high energies (&gt;100 GeV). I am currently a member of the <strong>LST-CTAO collaboration</strong>, profiting from the largest IACT in the world to detect GRBs.</p>
+
+    <p class="mb-4">Before this, I was deeply involved in the operations of the <strong>H.E.S.S. telescopes</strong> as Science Operations Manager and member of the GRB group. I was also a member of the <strong>HAWC and SWGO collaborations</strong>, where I developed tools for the analysis of transient events, event reconstruction, and detailed (sometimes fancy) simulations.</p>
+
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Education and Experience</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Postdoc at Gamma-ray Group of LAPP, Annecy-le-Vieux, France</li>
+      <li>Postdoc at the Non-thermal Astrophysics Group at MPIK Heidelberg</li>
+      <li><strong>PhD in Astrophysics</strong> (magna cum laude), University of Heidelberg<br>
+        <span class="text-sm italic">Dissertation: Search and first detection of very-high-energy photons in gamma-ray bursts: an analysis with HAWC and H.E.S.S. (download)<br>
+        Supervision by Prof. Dr. Jim Hinton and Dr. Harm Schoorlemmer.</span>
+      </li>
+      <li>Bachelor in Physics, Universidad Nacional Autónoma de México (high GPA)</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-10 mb-4">More About Me</h2>
+    <p class="mb-4">I am from Mexico City but spent most of my childhood summers in Chiapas — growing wild and scared of insects with my cousins and brothers.</p>
+
+    <p class="mb-4">I did my bachelor's at UNAM, where I got involved early with the <strong>HAWC Observatory</strong>, which was being built near a volcano in Mexico. I became captivated by it and its mission.</p>
+
+    <p class="mb-4">In 2016, I was a summer student at CERN, studying jet production in heavy ion collisions — an experience that shaped my path, but also helped me realize I wanted to study the universe through astrophysical messengers instead.</p>
+
+    <p class="mb-4">In 2017, I moved to Heidelberg to begin my PhD on GRBs. After a year of mostly upper limits, everything changed with the detection of <strong>GRB 180720B</strong> in 2018. From there: fun and chaos.</p>
+
+    <p class="mb-4">I spent my free time mostly at home, enjoying the simple things of life like toddler tantrums. My hobby is <em>having new hobbies</em> (hello ADHD). At this time these are mostly photography, DJing, and hydroponics. I enjoy a lot cooking, the one hobby that seems to stick. </p>
+
+  </div>
+</div>
+
+<!-- Footer Accent -->
+<div class="w-full h-4 bg-slate-400  left-0" style="bottom: 20px;"></div>
