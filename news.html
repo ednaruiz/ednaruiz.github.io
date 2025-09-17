@@ -1,0 +1,38 @@
+<!-- Tailwind Config -->
+<script>
+  window.tailwind = {
+    config: {
+      darkMode: 'class'
+    }
+  };
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome 4.7 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Subpage Layout -->
+<div class="min-h-screen bg-white text-black transition-colors duration-300 px-4 pt-20 pb-10 flex flex-col items-center relative">
+  <!-- Top Bar -->
+  <div class="absolute top-0 left-0 right-0 flex justify-between items-center py-4 px-4 max-w-6xl mx-auto w-full">
+    <!-- Profile Picture -->
+    <div class="w-12 h-12 rounded-full border-2 border-black overflow-hidden">
+      <img src="./assets/img/profile-placeholder.jpg" alt="Profile Picture" class="w-full h-full object-cover rounded-full">
+    </div>
+    <!-- Navigation Links -->
+    <div class="flex items-center gap-4 text-sm font-semibold">
+      <a href="/" class="hover:underline"><i class="fa fa-angle-left"></i> Home</a>
+      <a href="/more.html" class="hover:underline"><i class="fa fa-angle-left"></i> About Me</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="max-w-2xl w-full text-center mt-28">
+    <h1 class="text-3xl font-bold mb-4">My blog</h1>
+    <p class="text-gray-700 text-lg">
+      this is under construction
+    </p>
+  </div>
+</div>
+
+<!-- Footer Accent -->
+<div class="w-full h-4 bg-slate-200 left-0" style="bottom: 20px;"></div>
